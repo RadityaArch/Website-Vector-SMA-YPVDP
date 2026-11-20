@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B1F3A"/>
+      <stop offset="100%" stop-color="#173866"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" stroke="#60A5FA" stroke-opacity="0.12" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#grid)"/>
+
+  <!-- Robotic Base Pedestal -->
+  <rect x="210" y="460" width="220" height="44" rx="2" fill="#1E40AF" stroke="#60A5FA" stroke-width="2"/>
+  <rect x="255" y="396" width="130" height="64" rx="2" fill="#1E3A8A" stroke="#93C5FD" stroke-width="2"/>
+  <circle cx="320" cy="422" r="20" fill="#2563EB" stroke="#DBEAFE" stroke-width="2.5"/>
+
+  <!-- Primary Arm Linkage -->
+  <path d="M 320 422 L 220 245" stroke="#93C5FD" stroke-width="28" stroke-linecap="round"/>
+  <path d="M 320 422 L 220 245" stroke="#1D4ED8" stroke-width="16" stroke-linecap="round"/>
+  <circle cx="220" cy="245" r="20" fill="#2563EB" stroke="#EFF6FF" stroke-width="2.5"/>
+
+  <!-- Secondary Forearm Linkage -->
+  <path d="M 220 245 L 450 175" stroke="#93C5FD" stroke-width="22" stroke-linecap="round"/>
+  <path d="M 220 245 L 450 175" stroke="#1E40AF" stroke-width="12" stroke-linecap="round"/>
+  <circle cx="450" cy="175" r="16" fill="#38BDF8" stroke="#EFF6FF" stroke-width="2"/>
+
+  <!-- Servo Gripper Assembly -->
+  <rect x="466" y="152" width="44" height="46" rx="2" fill="#1E3A8A" stroke="#93C5FD" stroke-width="2"/>
+  <path d="M 510 162 L 575 135 L 598 158" stroke="#BFDBFE" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 510 188 L 575 215 L 598 192" stroke="#BFDBFE" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Target Block Object -->
+  <rect x="570" y="280" width="76" height="76" rx="2" fill="#2563EB" fill-opacity="0.3" stroke="#38BDF8" stroke-width="2" stroke-dasharray="6 4"/>
+  <text x="608" y="323" text-anchor="middle" fill="#BAE6FD" font-family="Montserrat, sans-serif" font-size="12" font-weight="600">TARGET</text>
+</svg>

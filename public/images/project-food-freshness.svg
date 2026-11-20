@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F2F7FE"/>
+      <stop offset="100%" stop-color="#DCE8F8"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" stroke="#93B4E2" stroke-opacity="0.22" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <rect width="800" height="600" fill="url(#grid)"/>
+
+  <!-- Sensor Enclosure Device -->
+  <rect x="170" y="135" width="460" height="310" rx="4" fill="#FFFFFF" stroke="#B7CCE8" stroke-width="2.5"/>
+  <rect x="188" y="153" width="424" height="274" rx="2" fill="#F4F8FE" stroke="#DCE7F5" stroke-width="1.5"/>
+
+  <!-- Blue header accent bezel -->
+  <rect x="215" y="180" width="220" height="145" rx="2" fill="#0B1F3A" stroke="#2563EB" stroke-width="2"/>
+  <text x="235" y="210" fill="#93C5FD" font-family="Times New Roman, serif" font-size="12">ESP32 FRESHNESS NODE</text>
+  <text x="235" y="255" fill="#38BDF8" font-family="Montserrat, sans-serif" font-size="34" font-weight="700">94.2%</text>
+  <text x="235" y="282" fill="#E0F2FE" font-family="Times New Roman, serif" font-size="12">VOC: 112 ppm · TEMP: 19.4°C</text>
+  <rect x="235" y="298" width="160" height="8" rx="1" fill="#1E3A8A"/>
+  <rect x="235" y="298" width="138" height="8" rx="1" fill="#38BDF8"/>
+
+  <!-- MQ Gas Sensor & DHT22 Probe on right -->
+  <g transform="translate(470, 185)">
+    <rect x="0" y="0" width="115" height="115" rx="3" fill="#EBF2FC" stroke="#93B4E2" stroke-width="2"/>
+    <circle cx="57" cy="57" r="34" fill="#CBD5E1" stroke="#64748B" stroke-width="2"/>
+    <circle cx="57" cy="57" r="24" fill="#475569" stroke="#94A3B8" stroke-dasharray="3 3"/>
+    <text x="57" y="138" text-anchor="middle" fill="#1E3A8A" font-family="Montserrat, sans-serif" font-size="12" font-weight="600">MQ-135 VOC</text>
+  </g>
+
+  <!-- Telemetry trend bar below -->
+  <rect x="215" y="348" width="370" height="56" rx="2" fill="#E8F0FC" stroke="#C5D7F0"/>
+  <path d="M 235 388 L 275 376 L 315 380 L 355 366 L 395 372 L 435 362 L 475 368 L 515 358 L 560 364" stroke="#1D4ED8" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="560" cy="364" r="5" fill="#2563EB"/>
+</svg>

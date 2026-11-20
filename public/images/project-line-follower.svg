@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="trackBg" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#F8FBFF"/>
+      <stop offset="100%" stop-color="#E5EFFB"/>
+    </linearGradient>
+    <linearGradient id="chassis" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1E3A8A"/>
+      <stop offset="100%" stop-color="#0F2347"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#trackBg)"/>
+  <!-- Curving test track line -->
+  <path d="M -20 490 C 180 490, 240 160, 440 180 C 620 198, 610 420, 820 390" stroke="#0A1D37" stroke-width="22" stroke-linecap="round"/>
+  <path d="M -20 490 C 180 490, 240 160, 440 180 C 620 198, 610 420, 820 390" stroke="#3B82F6" stroke-opacity="0.25" stroke-width="34" stroke-linecap="round"/>
+
+  <!-- Line Follower Robot Chassis -->
+  <g transform="translate(400, 275) rotate(-18)">
+    <!-- Wheels -->
+    <rect x="-125" y="-56" width="24" height="72" rx="6" fill="#0F172A" stroke="#334155" stroke-width="2"/>
+    <rect x="101" y="-56" width="24" height="72" rx="6" fill="#0F172A" stroke="#334155" stroke-width="2"/>
+    <!-- Motors -->
+    <rect x="-98" y="-36" width="44" height="32" rx="4" fill="#CBD5E1" stroke="#64748B"/>
+    <rect x="54" y="-36" width="44" height="32" rx="4" fill="#CBD5E1" stroke="#64748B"/>
+    <!-- Main T-shaped PCB chassis -->
+    <path d="M -92 -65 L 92 -65 L 92 48 L 36 48 L 36 125 L -36 125 L -36 48 L -92 48 Z" fill="url(#chassis)" stroke="#60A5FA" stroke-width="2.5"/>
+    <!-- Front IR Sensor Bar -->
+    <rect x="-105" y="112" width="210" height="32" rx="2" fill="#1D4ED8" stroke="#93C5FD" stroke-width="2"/>
+    <!-- 5 IR sensors -->
+    <g fill="#38BDF8">
+      <rect x="-82" y="122" width="14" height="12" rx="1"/>
+      <rect x="-44" y="122" width="14" height="12" rx="1"/>
+      <rect x="-7" y="122" width="14" height="12" rx="1" fill="#FACC15"/>
+      <rect x="30" y="122" width="14" height="12" rx="1"/>
+      <rect x="68" y="122" width="14" height="12" rx="1"/>
+    </g>
+    <!-- Microcontroller & Motor Driver -->
+    <rect x="-42" y="-38" width="84" height="62" rx="2" fill="#0B1628" stroke="#60A5FA" stroke-width="1.5"/>
+    <text x="0" y="-4" text-anchor="middle" fill="#93C5FD" font-family="Montserrat, sans-serif" font-size="11" font-weight="700">PID-LF</text>
+    <rect x="-26" y="-82" width="52" height="24" rx="2" fill="#2563EB" stroke="#BFDBFE"/>
+  </g>
+</svg>

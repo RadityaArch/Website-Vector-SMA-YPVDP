@@ -1,0 +1,6 @@
+{
+  "name": "VECTOR — Vidatra Engineering, Coding, Technology of Robotics",
+  "description": "Official digital hub for VECTOR (Vidatra Engineering, Coding, Technology of Robotics), showcasing student engineering, coding, IoT innovation, and robotics projects.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="800" y2="600" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#EBF2FC"/>
+      <stop offset="100%" stop-color="#D7E5F8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <!-- Breadboard -->
+  <rect x="95" y="120" width="360" height="360" rx="4" fill="#FFFFFF" stroke="#B7CCE8" stroke-width="2.5"/>
+  <rect x="115" y="140" width="320" height="320" rx="2" fill="#F8FAFC" stroke="#CBD5E1"/>
+  <!-- Power rails -->
+  <line x1="138" y1="158" x2="138" y2="442" stroke="#EF4444" stroke-width="2"/>
+  <line x1="152" y1="158" x2="152" y2="442" stroke="#2563EB" stroke-width="2"/>
+  <line x1="412" y1="158" x2="412" y2="442" stroke="#2563EB" stroke-width="2"/>
+  <!-- ESP32 board plugged on breadboard -->
+  <rect x="200" y="185" width="150" height="220" rx="3" fill="#0F2347" stroke="#2563EB" stroke-width="2"/>
+  <rect x="228" y="205" width="94" height="68" rx="2" fill="#CBD5E1"/>
+  <text x="275" y="244" text-anchor="middle" fill="#0F172A" font-family="Montserrat, sans-serif" font-size="13" font-weight="700">ESP32</text>
+  <!-- Jumper wires -->
+  <path d="M 152 240 C 175 240, 175 290, 200 290" stroke="#2563EB" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 138 210 C 170 210, 170 265, 200 265" stroke="#EF4444" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 350 320 C 385 320, 385 360, 412 360" stroke="#10B981" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Code & Telemetry Window Card on Right -->
+  <rect x="485" y="150" width="230" height="300" rx="4" fill="#0A1D37" stroke="#1E40AF" stroke-width="2"/>
+  <rect x="505" y="175" width="190" height="12" rx="1" fill="#1D4ED8"/>
+  <rect x="505" y="205" width="155" height="9" rx="1" fill="#38BDF8" fill-opacity="0.8"/>
+  <rect x="520" y="226" width="140" height="9" rx="1" fill="#93C5FD" fill-opacity="0.6"/>
+  <rect x="520" y="247" width="115" height="9" rx="1" fill="#93C5FD" fill-opacity="0.5"/>
+  <rect x="505" y="276" width="175" height="9" rx="1" fill="#60A5FA" fill-opacity="0.7"/>
+  <!-- Oscilloscope trace -->
+  <rect x="505" y="315" width="190" height="110" rx="2" fill="#061224" stroke="#1E3A8A"/>
+  <path d="M 520 375 L 545 375 L 545 340 L 580 340 L 580 398 L 615 398 L 615 340 L 650 340 L 650 375 L 680 375" stroke="#38BDF8" stroke-width="2.5" stroke-linejoin="round"/>
+</svg>
